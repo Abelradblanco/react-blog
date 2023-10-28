@@ -24,7 +24,7 @@
 .navbar h1 {
   font-size: 24px; /* Increase the font size for the title */
   margin: 0; /* Remove default margins */
-  color: white;
+  color:#f1356d;
 }
 
 .links {
@@ -39,7 +39,7 @@
 }
 
 .links a:hover {
-  text-decoration: underline; /* Add underline on hover */
+  color: #f1356d;
 }
 
 /* Style for the "New Blog" button */
@@ -77,29 +77,52 @@
   color: #f1356d;
   margin-bottom: 8px;
 }
-
-.blog-preview a{
+/* Blog preview link */
+.blog-preview a {
   text-decoration: none;
 }
 
-.blog-details h2{
-  font-size: 22px 0;
-  color: #f1356d;
-  margin-bottom: 10px;
-}
-
-.blog-details div{
+/* Blog details container */
+.blog-details {
+  background-color: #f9f9f9; /* Light gray background */
+  border: 1px solid #ddd; /* Gray border */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   margin: 20px 0;
 }
 
+/* Blog title */
+.blog-details h2 {
+  font-size: 24px; /* Larger font size */
+  color: #333; /* Dark gray text */
+  margin-bottom: 10px;
+}
+
+/* Blog content */
+.blog-details div {
+  font-size: 16px; /* Normal font size */
+  margin: 20px 0;
+  color: #555; /* Slightly lighter text color */
+}
+
+/* Action button (Delete and Edit) */
 .blog-details button {
   background: #f1356d;
   color: #fff;
   border: 0;
-  padding: 8px;
+  padding: 10px 16px; /* Slightly larger button size */
   border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.2s;
+  margin-right: 10px;
 }
+
+/* Hover effect for buttons */
+.blog-details button:hover {
+  background: #d32f4e; /* Darker pink on hover */
+}
+
 
 
 /* create new blog form */
@@ -131,6 +154,46 @@
   background: #f1356d;
   color: #fff;
   padding: 8px 16px; /* Smaller button size */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+/* Edit blog form */
+.edit {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.edit label {
+  text-align: left;
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.edit h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.edit input,
+.edit textarea,
+.edit select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.edit button {
+  background: #f1356d;
+  color: #fff;
+  padding: 8px 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
