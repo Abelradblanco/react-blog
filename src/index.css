@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}/* Navbar.css */
+.navbar-container {
+  background-color: #333;
+  position: relative;
+}
+
+.navbar {
+  color: #fff;
+  padding: 20px 30px; /* Add horizontal padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto; /* Center the navbar horizontally */
+  max-width: 80%; /* Set a maximum width for the navbar */
+}
+
+.navbar h1 {
+  font-size: 24px; /* Increase the font size for the title */
+  margin: 0; /* Remove default margins */
+  color: white;
+}
+
+.links {
+  display: flex;
+  gap: 20px; /* Add spacing between the links */
+}
+
+.links a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #fff; /* Text color for links */
+  font-weight: 500; /* Make the text a bit bolder */
+}
+
+.links a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Style for the "New Blog" button */
+.links a.new-blog {
+  background-color: #007bff; /* Blue background color for the button */
+  padding: 10px 15px; /* Add padding to the button */
+  border-radius: 5px; /* Rounded corners */
+  color: #fff; /* Text color */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: 600; /* Bolder text */
+}
+
+.links a.new-blog:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.content {
+  max-width: 80%;
+  margin: 40px auto;
+ padding: 20px;
+}
+
+.blog-preview{
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid white;
+}
+
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+
+.blog-preview h2{
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+.blog-preview a{
+  text-decoration: none;
+}
+
+.blog-details h2{
+  font-size: 22px 0;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+
+.blog-details div{
+  margin: 20px 0;
+}
+
+.blog-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+/* create new blog form */
+.create {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  padding: 8px 16px; /* Smaller button size */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
